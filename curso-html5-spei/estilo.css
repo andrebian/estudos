@@ -1,0 +1,106 @@
+/* 
+    Document   : estilo
+    Created on : 22/03/2013, 21:35:36
+    Author     : Administrador
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat+Subrayada:400,700);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,500);
+
+
+body {
+    font-family: 'verdana';
+}
+/*  Div Master  */
+#master{
+    width: 800px;
+    margin: auto;
+}
+/*  Header  */
+header{
+    width: 800px;
+    height: 100px;
+}
+/*  Div Logo  */
+.logo{
+    width: 300px;
+    height: 80px;
+    float: left;
+}
+
+/*  Imagem Logo  */
+
+.logo_top{
+    width: 250px;
+    height: 64px;
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-top: 8px;
+    background: url('imagem/logo.jpg')
+}
+
+/*  Menu  */
+
+.nav_header {
+    float: right;
+    height: 50px;
+    padding-top: 30px;
+    font-size: 19px;
+    font-family: 'Ubuntu';
+}
+
+.nav_header a{
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-right: 15px;
+    color: #000;
+}
+
+.nav_header a:hover{
+    color: #ffff33;
+}
+
+
+#conteudo_e, #conteudo_d{
+    width: 385px;
+    height: 600px;
+    border: 2px #ffff33 solid;
+}
+
+#conteudo_e, #conteudo_d h2{
+    font-family: 'Ubuntu';
+}
+
+#conteudo_e{
+    float: left;
+}
+
+#conteudo_d{
+    float: right;
+}
+
+#master{
+    width: 800px;
+    height: 550px;
+    margin: auto;
+    background-color: yellowgreen;
+}
+
+.teste{
+    width: 400px;
+    height: 100px;
+    background-color: #456734;
+    float: left;
+    text-align: center;
+}
+
+.teste2{
+    width: 400px;
+    height: 100px;
+    background-color: #899734;
+    float: right;
+    text-align: center;
+    vertical-align: central;
+}
