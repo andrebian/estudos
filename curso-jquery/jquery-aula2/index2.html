@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery - Aldeia Coworking</title>
+	<link rel="stylesheet" href="css/v1.css">
+	<script type="text/javascript" src="../jquery.js"></script>
+	<script type="text/javascript" >
+	
+		// slider
+		$(document).ready(function(){
+			$('#slider li').fadeOut();
+			$('#slider li#slide1').fadeIn();
+			
+			$('#controle a').click(function(){
+				$('#slider li').fadeOut();
+				mostrar = $(this).attr('href');
+				$(mostrar).fadeIn();
+				return false;
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<h1><a href="#">Workshop - jQuery</a></h1>
+			<nav>
+				<ul>
+					<li>
+						<a href="#">Ipsum</a>
+						<ul>
+							<li><a href="#">Ipsum</a>
+								<ul>
+									<li><a href="#">teste</a></li>
+									<li><a href="#">Andre</a></li>
+									<li><a href="#">Novo</a></li>
+									<li><a href="#">Cursus</a></li>
+									<li><a href="#">Nibh Pharetra</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Elit</a></li>
+							<li><a href="#">Justo Cras</a>
+								<ul>
+									<li><a href="#">Ipsum</a></li>
+									<li><a href="#">Elit</a></li>
+									<li><a href="#">Justo Cras</a></li>
+									<li><a href="#">Cursus</a></li>
+									<li><a href="#">Nibh Pharetra</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Cursus</a></li>
+							<li><a href="#">Nibh Pharetra</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Elit</a>
+						<ul>
+							<li><a href="#">Ipsum</a></li>
+							<li><a href="#">Elit</a></li>
+							<li><a href="#">Justo Cras</a>
+								<ul>
+									<li><a href="#">Ipsum</a></li>
+									<li><a href="#">Elit</a></li>
+									<li><a href="#">Justo Cras</a></li>
+									<li><a href="#">Cursus</a></li>
+									<li><a href="#">Nibh Pharetra</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Cursus</a></li>
+							<li><a href="#">Nibh Pharetra</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Justo Cras</a>
+						<ul>
+							<li><a href="#">Ipsum</a></li>
+							<li><a href="#">Elit</a></li>
+							<li><a href="#">Justo Cras</a>
+								<ul>
+									<li><a href="#">Ipsum</a></li>
+									<li><a href="#">Elit</a></li>
+									<li><a href="#">Justo Cras</a></li>
+									<li><a href="#">Cursus</a></li>
+									<li><a href="#">Nibh Pharetra</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Cursus</a></li>
+							<li><a href="#">Nibh Pharetra</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Cursus</a></li>
+					<li><a href="#">Nibh Pharetra</a></li>
+				</ul>
+			</nav>
+		</header>
+		<aside>
+			<form action="">
+				<label for="s">Procurar:</label>
+				<input type="search" id="s">
+			</form>
+			<p>O objetivo dessa página é testar algumas funções do jQuery.</p>
+			<p>Favor abrir não abrir no Internet Explorer. (:</p>
+		</aside>
+		
+		<section id="content">
+			<ul id="slider">
+				<li id="slide1"><img src="http://lorempixel.com/300/400/city" /></li>
+				<li id="slide2"><img src="http://lorempixel.com/300/400/sports" /></li>
+				<li id="slide3"><img src="http://lorempixel.com/300/400/animals" /></li>
+				<li id="slide4"><img src="http://lorempixel.com/300/400/nature" /></li>
+				<li id="slide5"><img src="http://lorempixel.com/300/400/transport" /></li>
+				<li id="slide6"><img src="http://lorempixel.com/300/400/people" /></li>
+			</ul>
+			
+			<nav id="controle">
+				<a href="#slide1" >1</a>
+				<a href="#slide2" >2</a>
+				<a href="#slide3" >3</a>
+				<a href="#slide4" >4</a>
+				<a href="#slide5" >5</a>
+				<a href="#slide6" >6</a>
+			</nav>
+			
+			<h2>Porta Ullamcorper Fermentum Vehicula Malesuada</h2>
+			<p>Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nulla vitae elit libero, a pharetra augue.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur.</p>
+			<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla vitae elit libero, a pharetra augue. Nulla vitae elit libero, a pharetra augue. Vestibulum id ligula porta felis euismod semper. Aenean lacinia bibendum nulla sed consectetur.</p>
+			<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+			<h2>Porta Ullamcorper Fermentum Vehicula Malesuada</h2>
+			<p>Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nulla vitae elit libero, a pharetra augue.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur.</p>
+			<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla vitae elit libero, a pharetra augue. Nulla vitae elit libero, a pharetra augue. Vestibulum id ligula porta felis euismod semper. Aenean lacinia bibendum nulla sed consectetur.</p>
+			<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+			<h2>Porta Ullamcorper Fermentum Vehicula Malesuada</h2>
+			<p>Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nulla vitae elit libero, a pharetra augue.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur.</p>
+			<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla vitae elit libero, a pharetra augue. Nulla vitae elit libero, a pharetra augue. Vestibulum id ligula porta felis euismod semper. Aenean lacinia bibendum nulla sed consectetur.</p>
+			<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+			<h2>Porta Ullamcorper Fermentum Vehicula Malesuada</h2>
+			<p>Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nulla vitae elit libero, a pharetra augue.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur.</p>
+			<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla vitae elit libero, a pharetra augue. Nulla vitae elit libero, a pharetra augue. Vestibulum id ligula porta felis euismod semper. Aenean lacinia bibendum nulla sed consectetur.</p>
+			<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+			<h2>Porta Ullamcorper Fermentum Vehicula Malesuada</h2>
+			<p>Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nulla vitae elit libero, a pharetra augue.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur.</p>
+			<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla vitae elit libero, a pharetra augue. Nulla vitae elit libero, a pharetra augue. Vestibulum id ligula porta felis euismod semper. Aenean lacinia bibendum nulla sed consectetur.</p>
+			<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+			<h2>Porta Ullamcorper Fermentum Vehicula Malesuada</h2>
+			<p>Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nulla vitae elit libero, a pharetra augue.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur.</p>
+			<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla vitae elit libero, a pharetra augue. Nulla vitae elit libero, a pharetra augue. Vestibulum id ligula porta felis euismod semper. Aenean lacinia bibendum nulla sed consectetur.</p>
+			<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+			<h2>Porta Ullamcorper Fermentum Vehicula Malesuada</h2>
+			<p>Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nulla vitae elit libero, a pharetra augue.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur.</p>
+			<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla vitae elit libero, a pharetra augue. Nulla vitae elit libero, a pharetra augue. Vestibulum id ligula porta felis euismod semper. Aenean lacinia bibendum nulla sed consectetur.</p>
+			<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+			<h2>Porta Ullamcorper Fermentum Vehicula Malesuada</h2>
+			<p>Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nulla vitae elit libero, a pharetra augue.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur.</p>
+			<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla vitae elit libero, a pharetra augue. Nulla vitae elit libero, a pharetra augue. Vestibulum id ligula porta felis euismod semper. Aenean lacinia bibendum nulla sed consectetur.</p>
+			<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+			<h2>Porta Ullamcorper Fermentum Vehicula Malesuada</h2>
+			<p>Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nulla vitae elit libero, a pharetra augue.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur.</p>
+			<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla vitae elit libero, a pharetra augue. Nulla vitae elit libero, a pharetra augue. Vestibulum id ligula porta felis euismod semper. Aenean lacinia bibendum nulla sed consectetur.</p>
+			
+		</section><!-- /#content -->
+		<footer>
+			Workshop de jQuery - <a href="http://aldeiaco.com.br/">Aldeia Coworking</a>
+		</footer>
+	</div><!-- /#wrapper -->
+</body>
+</html>

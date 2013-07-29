@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8" />
+		<title>jQuery - Dia 1</title> 
+		
+		<!-- HERE CAMES THE ROCK'N ROLL -->
+		<script type="text/javascript" src="jquery.js"></script>
+		<style>
+			ul{background: orange; color: white; padding: 20px;}
+			ul ul{background: gold; color: white; padding: 20px; display:none;}
+			ul.mudou{background: #00f}
+		</style>
+		<script type="text/javascript">
+			// $ função global
+			// document).ready -> quando o documento estiver pronto
+			// function -> executa algo
+			$(document).ready(function(){
+				//pega somente os links de dentro do Li, caso tenha uma div ou span
+				// o mesmo é ignorado
+				//$('li>a')...
+				
+				// busca dados específicos
+				// primeiro valor
+				//$('li:first-child')....
+	
+				// ultimo valor
+				//$('li:last-child')...
+				
+				// oculta todas
+				/*pegou = "li"
+				$(pegou).fadeOut();*/
+				
+				// oculta somente específica
+				/*pegou = "li";
+				$(pegou+'.cinco').fadeOut(); */
+				
+				// oculta todas, presevando uma em específico
+				/*pegou = "li";
+				$(pegou).fadeOut();
+				$(pegou+'.cinco').slideDown();
+					*/			
+				
+				// menu drop down
+				$('li>a').click(function(){
+					$('li>ul').slideUp(	);
+					console.log('Mudou de cor');
+					$(this).parent().find('ul').stop().slideToggle(1500, function(){
+						$(this).parent().find('ul').toggleClass('mudou');
+						
+					});
+					return false;						
+				});
+			});
+		</script>
+		
+	</head>
+	<body>
+		<h1 id="title">jQuery</h1>
+		<!--<img src="http://lorempixel.com/400/200" alt="imagem de exemplo" /> -->
+		<a href="http://google.com.br" >Apaga tudo</a>
+		<ul>
+			<li>
+				<a href="">1</a>
+				<ul>
+					<li>teste 1</li>
+					<li>teste 2</li>
+					<li>teste 3</li>
+					<li>teste 4</li>
+				</ul>
+			</li>
+			<li>
+				<a href="">2</a>
+				<ul>
+					<li>teste 1</li>
+					<li>teste 2</li>
+					<li>teste 3</li>
+					<li>teste 4</li>
+				</ul>
+			</li>
+			<li>
+				<a href="">3</a>
+				<ul>
+					<li>teste 1</li>
+					<li>teste 2</li>
+					<li>teste 3</li>
+					<li>teste 4</li>
+				</ul>
+			</li>
+			<li>
+				<a href="">4</a>
+				<ul>
+					<li>teste 1</li>
+					<li>teste 2</li>
+					<li>teste 3</li>
+					<li>teste 4</li>
+				</ul>
+			</li>
+			<li class="cinco">5</li>
+		</ul>
+	</body>
+	
+</html>

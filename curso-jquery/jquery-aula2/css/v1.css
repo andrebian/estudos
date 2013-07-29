@@ -1,0 +1,31 @@
+*{margin:0;padding:0;border:0}
+body{font:62.5% Arial;background:#666;color:#333}
+#wrapper{border:#333 5px solid;background:#fff;margin:10px auto;width:800px;padding:20px;border-radius:20px}
+header{}
+header h1{font-size:6em;letter-spacing:-.05em;text-align:center;border-bottom:#666 1px dotted;padding:0 0 20px}
+header h1 a{color:#333;text-decoration:none;}
+nav{font-size:1.4em;padding:10px 20px;border-bottom:#666 1px dotted;height:16px}
+nav li{list-style:none;float:left;margin:0 0 0 20px}
+nav li a{color:#333;text-decoration:none;text-transform:uppercase;font-weight:bold;letter-spacing:-.05em}
+nav li a:hover{color:#03c;text-decoration:underline}
+nav li ul{position:absolute;margin:0 0 0 0px;background:#ccc;display:none;padding:10px 0;border-radius:10px}
+nav li ul li{display:block;width:200px;float:none}
+nav li ul ul{margin:-20px 0 0 200px;background:#999}
+aside p{padding:0 0 10px}
+section#content img{position:absolute; bottom:0px;left:50%; margin: 0 0 0 -300px; }
+section#content{margin:20px 240px 20px 0}
+section#content h2{font-size:3em;letter-spacing:-.05em;margin-bottom:10px}
+section#content h3{font-size:1.8em}
+section#content p{font-size:1.4em;padding:10px}
+section#content ul{font-size:1.4em;margin:20px 20px 20px 40px}
+section#content ul:hover{background:#ccc}
+section#content ul:focus{background:#ffc}
+form{background:#f0f0f0;border-bottom:#ccc 1px dotted;padding:20px;font-size:1.4em;margin:0 0 20px;border-radius:10px}
+form span{display:block;padding:5px 0}
+form label{}
+form input{border:#ccc 1px solid;font:1.1em Arial;padding:5px;width:250px;display:block}
+form input[type="submit"]{width:auto;margin:20px 0 0;background:#333;color:#fff;width:100px}
+aside{float:right;width:200px;font-size:1.2em;border-left:#ccc 1px solid;padding:0 10px;margin:20px 0 0}
+aside form{width:auto;padding:20px;font-size:1em}
+aside input{border:#ccc 1px solid;font:1.1em Arial;padding:5px;width:auto;display:block}
+footer{clear:both;border-top:#666 1px dotted;padding:20px 10px 0;font-size:1.2em}
