@@ -1,6 +1,6 @@
 <?php
 
-$url = 'http://localhost/estudos/livro-web-services/cap2-get-form-page.php';
+$url = 'http://localhost/estudos/livro-web-services/cap2-form-page.php';
 $data = array('category' => 'test', 'rows' => 50);
 $getAddr = $url . '?' . http_build_query($data);
 
