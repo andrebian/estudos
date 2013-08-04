@@ -31,6 +31,8 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 		echo $this->Html->meta('icon');
 
 		echo $this->Html->css('cake.generic');
+                
+                echo $this->Html->script('jquery-1.7.min');
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
@@ -58,5 +60,13 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 		</div>
 	</div>
 	<?php echo $this->element('sql_dump'); ?>
+    
+    <script>
+        <?php 
+            foreach($this->Js->getBuffer(true) as $script) {
+                echo $script;
+            }
+         ?>
+    </script>         
 </body>
 </html>
