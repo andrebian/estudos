@@ -1,0 +1,9 @@
+{% extends "AcmeDemoBundle::layout.html.twig" %}
+
+{% block title "Olá " ~ name %}
+
+{% block content %}
+    <h1>Oi {{ name }}!</h1>
+{% endblock %}
+
+{% set code = code(_self) %}
