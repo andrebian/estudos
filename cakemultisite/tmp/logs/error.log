@@ -1,0 +1,15 @@
+2013-08-17 12:32:38 Error: [MissingDatasourceConfigException] The datasource configuration "test" was not found in database.php
+Exception Attributes: array (
+  'config' => 'test',
+)
+Stack Trace:
+#0 /opt/cakephp/lib/Cake/Model/ConnectionManager.php(93): ConnectionManager::_getConnectionObject('test')
+#1 /opt/cakephp/lib/Cake/TestSuite/Fixture/CakeFixtureManager.php(94): ConnectionManager::getDataSource('test')
+#2 /opt/cakephp/lib/Cake/TestSuite/Fixture/CakeFixtureManager.php(73): CakeFixtureManager->_initDb()
+#3 /opt/cakephp/lib/Cake/TestSuite/CakeTestRunner.php(58): CakeFixtureManager->fixturize(Object(MigrationVersionTest))
+#4 /opt/cakephp/lib/Cake/TestSuite/CakeTestSuiteCommand.php(97): CakeTestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#5 /opt/cakephp/lib/Cake/TestSuite/CakeTestSuiteDispatcher.php(247): CakeTestSuiteCommand->run(Array)
+#6 /opt/cakephp/lib/Cake/TestSuite/CakeTestSuiteDispatcher.php(100): CakeTestSuiteDispatcher->_runTestCase()
+#7 /opt/cakephp/lib/Cake/TestSuite/CakeTestSuiteDispatcher.php(117): CakeTestSuiteDispatcher->dispatch()
+#8 /var/www/estudos/cakemultisite/webroot/test.php(100): CakeTestSuiteDispatcher::run()
+#9 {main}
