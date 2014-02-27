@@ -1,0 +1,15 @@
+{
+    "name": "vendor/doctrine-na-pratica",
+    "description": "Description of project doctrine-na-pratica.",
+    "authors": [
+        {
+            "name": "Andre Cardoso aka andrebian",
+            "email": "andrecardosodev@gmail.com"
+        }
+    ],
+    "require": {
+        "doctrine/common" : "*",
+        "doctrine/orm" : "*",
+        "doctrine/dbal" : "*"
+    }
+}
