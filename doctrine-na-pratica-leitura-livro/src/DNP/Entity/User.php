@@ -3,6 +3,7 @@
 namespace DNP\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\ArrayCollection;
 
 /**
  * @ORM\Entity
@@ -184,7 +185,7 @@ class User
     }
 
     public function __construct()
-    {
+    {        
         $this->courseCollection = new ArrayCollection;
         $this->lessonCollection = new ArrayCollection;
         $this->profileCollection = new ArrayCollection;
