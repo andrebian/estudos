@@ -11,5 +11,10 @@
         "doctrine/common" : "*",
         "doctrine/orm" : "*",
         "doctrine/dbal" : "*"
+    },
+    "autoload": {
+        "psr-0": {
+            "DNP\\": "src/"
+        }
     }
 }
